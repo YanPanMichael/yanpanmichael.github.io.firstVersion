@@ -32,18 +32,18 @@ A powerful component building and packaging tool based on Rollup.
 
 
 ```markdown
-- Configration as
+Custom config:
 {
     input: 'src/index.js',
     output: {
         directory: 'dist',
         name: 'bundle',
         format: ['cjs', 'es', 'umd', 'iife', 'amd'],
-        banner: '',
+        banner: 'Author: xxx',
     },
     formatConfig: {
         cjs: {
-            external: ['lodash'],
+            external: ['xxx'],
         },
         es: {
             isolateDep: true,
@@ -67,9 +67,16 @@ A powerful component building and packaging tool based on Rollup.
         '~': path.join(process.cwd(), './src')
     }
 }
-
-- Support 3 kinds of input formats **JS, TS, Vue** and 5 kinds of output packaged formats _umd, es, cjs, iife, amd_
 ```
+
+```js
+  "scripts": {
+    "build": "struk build --source=ts"
+  },
+```
+
+- Support _3_ kinds of input formats **JS, TS, Vue**
+- Support _5_ kinds of output formats **umd, es, cjs, iife, amd**
 
 Not open source yet, please hold on, I will publish soon.
 
