@@ -30,9 +30,8 @@ For more details see [Source Code](https://github.com/YanPanMichael/astart-cli) 
 
 A powerful component building and packaging tool based on Rollup.
 
-
+#### Add custom configuration in struk.config.js
 ```markdown
-Custom config:
 {
     input: 'src/index.js',
     output: {
@@ -68,7 +67,7 @@ Custom config:
     }
 }
 ```
-
+#### Add command line in package.json
 ```js
   "scripts": {
     "build": "struk build --source=ts"
@@ -88,4 +87,4 @@ Not open source yet, please hold on, I will publish soon.
 
 ### Support or Contact
 
-Having trouble with this page? Check out the [contact](mail://1214863281@qq.com) and we’ll help you sort it out.
+Having trouble with this page? Check out the [contact](mailto:1214863281@qq.com) and we’ll help you sort it out.
